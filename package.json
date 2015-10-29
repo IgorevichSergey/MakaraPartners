@@ -2,16 +2,17 @@
   "name": "makara-partners",
   "version": "0.1.0",
   "devDependencies": {
+    "body-parser": "~1.13.3",
+    "bower": "~1.4.1",
+    "express": "~4.13.2",
     "gulp": "~3.9.0",
     "gulp-concat": "~2.6.0",
-    "bower": "~1.4.1",
-    "gulp-cssmin": "~0.1.7",
-    "gulp-load-plugins": "~1.0.0-rc.1",
-    "run-sequence": "~1.1.2",
     "gulp-concat-css": "~2.2.0",
-    "gulp-livereload": "~3.8.0",
     "gulp-connect": "~2.2.0",
-    "express": "~4.13.2",
-    "body-parser": "~1.13.3"
+    "gulp-cssmin": "~0.1.7",
+    "gulp-livereload": "~3.8.0",
+    "gulp-load-plugins": "~1.0.0-rc.1",
+    "gulp-uncss": "^1.0.4",
+    "run-sequence": "~1.1.2"
   }
 }
