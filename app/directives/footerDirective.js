@@ -5,7 +5,7 @@ angular.module('footer.directive', [])
            scope:{
 
            },
-           template:'test',
+           //template:,
            controller:function(){
 
            }

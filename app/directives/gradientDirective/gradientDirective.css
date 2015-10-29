@@ -1,0 +1,7 @@
+.gradient{
+    height:50px;
+    background: #B22022;
+    background: linear-gradient(to bottom, #B22022, #EB2125);
+    padding: 10px;
+    border: 1px solid #333;
+}
