@@ -2,12 +2,6 @@ angular.module('gradient.directive', [])
     .directive('gradientDirective', function(){
         return {
             restrict:'E',
-            scope:{
-
-            },
-            template:'<div class="gradient"></div>',
-            controller:function(){
-
-            }
+            template:'<div class="gradient"><img class="header-logo" src="images/mak_logo.svg"</div>'
         }
     });

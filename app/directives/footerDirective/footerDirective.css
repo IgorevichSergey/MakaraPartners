@@ -1,0 +1,53 @@
+.menu{
+    padding:0;
+    width:70%;
+    min-width:250px;
+    max-width:900px;
+}
+.menu ul{
+    display:table-row;
+}
+.menu ul li{
+    display:table-cell;
+    width:auto;
+    height:50px;
+    vertical-align:bottom;
+}
+.menu .footer-logo{
+    color:red;
+    position: absolute;
+    width: auto;
+    height: 50px;
+    right: 5px;
+    top:15px;
+}
+.menu ul li a{
+    color:white;
+    font:14px Verdana;
+    text-decoration:none;
+    height:50px;
+    display:table-cell;
+    width:1000px;
+    vertical-align:middle;
+    text-align:center;
+}
+@media screen and (max-width: 960px){
+    .menu{
+        width:100%;
+    }
+    .menu .footer-logo{
+        text-align: center;
+        color: red;
+        position: static;
+        width: 100%;
+        display: block;
+        padding-top: 15px;
+    }
+
+}
+@media screen and (max-width: 380px){
+    .menu ul li{
+        display: table-row;
+    }
+}
+

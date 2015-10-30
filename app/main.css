@@ -1,7 +1,30 @@
-.main-part{
+.main-class{
     background: url(../images/background_image.jpg) no-repeat;
     background-size: cover;
     position: fixed;
     width: 100%;
     height: 100%;
+}
+.main-part{
+    position: relative;
+    clear: both;
+    margin-left: 20%;
+    width: 60%;
+    border: 1px solid white
+}
+.middle-block{
+    padding-bottom: 200px;
+    padding-top: 311px;
+}
+.main-class hr{
+     border-color:red;
+ }
+@media screen and (max-width: 960px){
+    .main-part{
+        clear: both;
+        margin-left: 10%;
+        width: 80%;
+        border: 1px solid white
+    }
+
 }
