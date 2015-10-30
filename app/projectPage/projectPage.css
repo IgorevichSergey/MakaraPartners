@@ -1,0 +1,24 @@
+.gallery-container{
+    width:100%;
+    overflow: hidden;
+}
+.test-gallery{
+    width:100%;
+    white-space: nowrap;
+}
+.test-gallery ul{
+    list-style: none;
+    padding-left:0;
+}
+.test-gallery ul li{
+    display:inline;
+}
+.test-gallery ul li .image-block{
+    display: inline-block;
+    padding:5px;
+    border:1px solid red;
+}
+.test-gallery ul li .image-block img{
+    width:auto;
+    height:100px;
+}

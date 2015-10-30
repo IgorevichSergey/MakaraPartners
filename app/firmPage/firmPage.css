@@ -1,0 +1,59 @@
+.middle-block.firm-page{
+    padding-top:0;
+}
+.firm-page .text-block{
+    font-weight:800;
+    font-size:18px;
+    color:white;
+    width:60%;
+    height: 500px;
+    overflow-y: scroll;
+    margin:0 auto;
+}
+.firm-page .text-block .begin-part,
+.firm-page .text-block .end-part{
+    color:#7F7F7F;
+}
+.firm-page .text-block ul {
+    max-width: 465px;
+}
+.firm-page .text-block ul li span{
+    padding-left: 10px;
+}
+
+.firm-page .text-block::-webkit-scrollbar {
+    width: 5px;
+    background-color: #979797;
+}
+.firm-page .text-block::-webkit-scrollbar-button {
+    border: none;
+    border-radius: 10px;}
+.firm-page .text-block::-webkit-scrollbar-track {
+    border:none;
+}
+.firm-page .text-block::-webkit-scrollbar-thumb {
+    background: #B22022;
+    background: linear-gradient(to bottom, #B22022, #EB2125);
+}
+.firm-page .text-block::-webkit-scrollbar-corner {
+    border: none;
+}
+@media screen and (max-width: 1100px){
+    .firm-page .text-block{
+        width:80%;
+    }
+}
+@media screen and (max-width: 960px){
+    .middle-block.firm-page{
+        width: 90%;
+    }
+
+    .firm-page .text-block{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 380px){
+    .middle-block.firm-page{
+        width: 100%;
+    }
+}

@@ -2,9 +2,76 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>firma page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.01, user-scalable=0">
+    <title>firmie page</title>
+    <link href="css/bower.css" rel="stylesheet" type="text/css">
+    <link href="css/app.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body ng-app="firmPage">
+<div class="main-class" ng-controller="firmPageCtrl as firmPageCtrl">
+    <gradient-directive></gradient-directive>
+    <div class="middle-block firm-page">
+        <div class="header-block">
+            <h3>
+                MAKARA Partners
+            </h3>
+        </div>
+        <div class="text-block">
 
+            <div class="begin-part">
+                <p>Nasza pracownia od 1989 roku jako zespół architekta i konstruktora wykonuje projekty budowlane i wykonawcze budynków mieszkalnych, usługowych i innych, oraz projekty infrastruktury związanej z budynkami na działkach budowlanych.
+                </p>
+
+                <p>Projektujemy budynki nowe, przebudowy i rozbudowy budynków istniejących, jak również opracowujemy inwentaryzacje i oceny techniczne stanu istniejącego budynków.
+                </p>
+                <p>Zajmujemy się projektowaniem wystroju wnętrz.
+                </p>
+                <p>Przy opracowywaniu projektów naszą dewizą jest :</p>
+            </div>
+
+            <ul>
+                <li>Przemyślana funkcja budynku i otoczenia</li>
+                <li>Ciekawa forma architektoniczna uwzględniająca kontekst miejsca i starannie dobrany szczegół</li>
+                <li>Optymalnie dobrana konstrukcja</li>
+                <li>Rzetelność i przejrzystość projektów</li>
+                <li>Opracowanie szczegółów wykonawczych</li>
+            </ul>
+
+            <div class="end-part">
+                <p>Nasze projekty cechuje spójność rozwiązań architektonicznych i konstrukcyjnych z równoczesnym uwzględnieniem optymalizacji sposobu wykonania (materiały, technologia i koszty budowy).
+                </p>
+                <p>Rozwiązania projektowe i dobór materiałów dostosowujemy do indywidualnych potrzeb i oczekiwań inwestora, z równą starannością opracowujemy każdy projekt mały i duży.
+                </p>
+                <p>Jako pracownia współpracujemy z projektantami innych specjalności budowlanych, kosztorysantami oraz rzeczoznawcami BHP, Sanepid, P-poż.
+                </p>
+                <p>Załatwiamy wszystkie formalności związane z uzyskaniem pozwolenia na budowę oraz formalności związane z zakończeniem budowy i oddaniem budynku do użytkowania.
+                </p>
+                <p>Z poważaniem :</p>
+
+                <p>mgr inż. arch. Maria MAKARA
+                    Architekt - uprawnienia w specjalności architektonicznej do projektowania bez ograniczeń nr 1/06/SLOKK, członek ŚOIA
+                    Konstruktor - uprawnienia w specjalności konstrukcyjno-budowlanej do projektowania bez ograniczeń nr 690/93, członek ŚOIIB
+                </p>
+                <p>
+                    mgr inż. Aleksander MAKARA
+                    Konstruktor - uprawnienia w specjalności konstrukcyjno-budowlanej do projektowania i kierowania robotami budowlanymi bez ograniczeń nr 164/93, członek ŚOIIB
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="footer-block">
+        <hr />
+        <div class="main-part">
+            <footer-directive></footer-directive>
+        </div>
+    </div>
+
+
+</div>
+<script src="js/bower-components.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

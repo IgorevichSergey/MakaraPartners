@@ -2,9 +2,44 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.01, user-scalable=0">
     <title>kontakt page</title>
+    <link href="css/bower.css" rel="stylesheet" type="text/css">
+    <link href="css/app.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body ng-app="homePage">
+<div class="main-class" ng-controller="kontaktPageCtrl as kontaktPageCtrl">
+    <gradient-directive></gradient-directive>
+    <div class="middle-block kontakt-block">
+        <div class="header-block">
+            <h3>
+                MAKARA Partners
+            </h3>
+        </div>
+        <div class="content-block">
+            <div class="left-side">
+                <p>addres</p>
+                <p>addres</p>
+                <p>addres</p>
+                <p>addres</p>
+                <p>addres</p>
+            </div>
+            <div class="right-side">
+                <img src="images/kontakt_picture.jpg" />
+            </div>
+        </div>
+    </div>
+    <div class="footer-block">
+        <hr />
+        <div class="main-part">
+            <footer-directive></footer-directive>
+        </div>
+    </div>
 
+
+</div>
+<script src="js/bower-components.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

@@ -48,6 +48,10 @@
 @media screen and (max-width: 380px){
     .menu ul li{
         display: table-row;
+        height: 20px;
+    }
+    .menu ul li a{
+        height: 20px;
     }
 }
 
