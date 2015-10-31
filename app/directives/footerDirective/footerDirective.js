@@ -15,6 +15,11 @@ angular.module('footer.directive', [])
                         '</ul>' +
             '<span class="footer-logo">Gotowe projecty domow:DOM.PI</span>'+
                     '</div>'+
-            '</div>'
+            '</div>',
+            controller: function(){
+                var footer_height = $('.footer-block').height();
+                var display_height = $(window).height();
+                $('.footer-block').css('top', display_height-footer_height);
+            }
         }
     });

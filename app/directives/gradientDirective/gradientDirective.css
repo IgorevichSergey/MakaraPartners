@@ -1,21 +1,30 @@
 .gradient{
-    margin-top: 22px;
-    width: 80%;
-    float: right;
     height: 50px;
     background: #B22022;
     background: linear-gradient(to bottom, #B22022, #EB2125);
-    padding: 10px;
-    border: 1px solid #333;
+    margin-left: 175px;
+    margin-top: 15px;
 }
 .header-logo{
-    width: auto;
-    height: 167px;
-    margin-top: -50px;
-    margin-left: 55px;
+    height: 45px;
+    padding-top: 5px;
+    padding-left: 100px;
 }
-@media screen and (max-width: 960px){
+.gradient-sublime-text{
+    font-family: mavenproregular;
+    padding-top:2px;
+    font-size: 18px;
+    margin-left: 210px;
+    color:white;
+}
+@media screen and (max-width: 760px){
+    .header-logo{
+        padding-left: 20px;
+    }
     .gradient{
-        width: 90%;
+        margin-left: 0;
+    }
+    .gradient-sublime-text {
+        margin-left: 50px;
     }
 }

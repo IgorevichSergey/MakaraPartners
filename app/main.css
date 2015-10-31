@@ -1,3 +1,19 @@
+@font-face {
+    font-family: mavenproblack;
+    src: url(../fonts/mavenproblack.ttf);
+}
+@font-face {
+    font-family: mavenprobold;
+    src: url(../fonts/mavenprobold.ttf);
+}
+@font-face {
+    font-family: mavenpromedium;
+    src: url(../fonts/mavenpromedium.ttf);
+}
+@font-face {
+    font-family: mavenproregular;
+    src: url(../fonts/mavenproregular.ttf);
+}
 .main-class{
     background: url(../images/background_image.jpg) no-repeat;
     background-size: cover;
@@ -5,26 +21,31 @@
     width: 100%;
     height: 100%;
 }
-.main-part{
-    position: relative;
-    clear: both;
-    margin-left: 20%;
-    width: 60%;
-    border: 1px solid white
-}
+
 .middle-block{
     padding-bottom: 200px;
     padding-top: 311px;
 }
-.main-class hr{
+.footer-block{
+    width: 100%;
+    position: absolute;
+    padding-bottom:10px;
+}
+.footer-block hr{
      border-color:red;
  }
+.footer-part{
+    position: relative;
+    clear: both;
+    margin-left: 20%;
+    width: 60%;
+}
 @media screen and (max-width: 960px){
-    .main-part{
-        clear: both;
-        margin-left: 10%;
-        width: 80%;
-        border: 1px solid white
-    }
+    /*.main-part{*/
+        /*clear: both;*/
+        /*margin-left: 10%;*/
+        /*width: 80%;*/
+        /*border: 1px solid white*/
+    /*}*/
 
 }
