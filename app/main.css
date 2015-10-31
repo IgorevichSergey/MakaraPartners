@@ -14,38 +14,49 @@
     font-family: mavenproregular;
     src: url(../fonts/mavenproregular.ttf);
 }
-.main-class{
-    background: url(../images/background_image.jpg) no-repeat;
-    background-size: cover;
-    position: fixed;
+h3{
+    font-family:mavenproregular;
+    margin-bottom:20px;
+}
+.center-block{
+    color:white;
+    padding:10px;
+    margin-left:20%;
+}
+.logo-description{
+    color:white;
+    font-size:18px;
+    padding-top:5px;
+    padding-left:25px;
+    font-family: mavenpromedium;
+}
+.background-class{
+    position: absolute;
     width: 100%;
     height: 100%;
+    background-image: url(../images/background_image.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
 }
-
-.middle-block{
-    padding-bottom: 200px;
-    padding-top: 311px;
+.left-side{
+    width:50%;
+    float:left;
 }
-.footer-block{
-    width: 100%;
-    position: absolute;
-    padding-bottom:10px;
+.right-side{
+    width:50%;
+    float:right;
 }
-.footer-block hr{
-     border-color:red;
- }
-.footer-part{
-    position: relative;
-    clear: both;
-    margin-left: 20%;
-    width: 60%;
+.clear-block{
+    clear:both;
 }
-@media screen and (max-width: 960px){
-    /*.main-part{*/
-        /*clear: both;*/
-        /*margin-left: 10%;*/
-        /*width: 80%;*/
-        /*border: 1px solid white*/
-    /*}*/
-
+@media screen and (max-width: 750px){
+    h3{
+        margin-bottom:10px;
+    }
+    .center-block{
+        margin-left:20px;
+    }
+    .left-side, .right-side{
+        width:100%;
+    }
 }

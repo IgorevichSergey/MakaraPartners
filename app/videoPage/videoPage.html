@@ -4,28 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.01, user-scalable=0">
-    <title>project page</title>
+    <title>video page</title>
     <link href="css/bower.css" rel="stylesheet" type="text/css">
     <link href="css/app.css" rel="stylesheet" type="text/css">
 </head>
-<body ng-app="projectPage">
-<div class="background-class" ng-controller="projectPageCtrl as projectPageCtrl">
+<body ng-app="videoPage">
+<div class="background-class" ng-controller="videoPageCtrl as videoPageCtrl">
     <gradient-directive></gradient-directive>
     <div class="container">
-        <div class="center-block gallery-page">
-            <div class="big-image">
-                <img src="{{projectPageCtrl.bigImage}}"/>
+        <div class="center-block">
+            <div class="video-block">
+                <video src="images/przelot nad budynkiem.avi"></video>
             </div>
         </div>
-    </div>
-    <div class="gallery">
-        <div ng-click="projectPageCtrl.imageSet(img)"
-             class="gallery-img"
-             ng-class="{'img-active':projectPageCtrl.bigImage == img.img_src}"
-             ng-repeat="img in projectPageCtrl.gallery">
-            <img height="100px" src="{{img.img_src}}"/>
-        </div>
-
     </div>
     <footer-directive></footer-directive>
 </div>

@@ -1,0 +1,57 @@
+.kontakt-page{
+   margin-right: 10%;
+   height:475px;
+}
+.kontakt-page img{
+    width:100%;
+}
+.kontakt-page .image-div{
+    background-color: grey;
+    min-width:250px;
+    max-width:350px;
+    padding:5px;
+    border:1px solid white;
+}
+.kontakt-page .contact-info-block{
+    padding:5px;
+}
+.kontakt-page .show-number{
+    color:grey;
+    border:1px solid grey;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.kontakt-page::-webkit-scrollbar {
+    width: 5px;
+    height: 120%;
+    background: rgba(0, 0, 0, 0);
+}
+.kontakt-page::-webkit-scrollbar-button {
+    background: grey;
+}
+.kontakt-page::-webkit-scrollbar-track {
+    background: grey;
+}
+
+.kontakt-page::-webkit-scrollbar-thumb {
+    background: #B22022;
+    border:7px solid #B22022;
+    background: linear-gradient(to bottom, #B22022, #EB2125);
+}
+
+/*@media screen and (max-width: 970px){*/
+    /*.kontakt-page{*/
+        /*margin-right: 10%;*/
+    /*}*/
+/*}*/
+@media screen and (max-width: 750px){
+    .kontakt-page{
+        height:370px;
+        margin-right: 20px;
+        overflow-y:scroll;
+    }
+    .kontakt-page .image-div{
+        max-width: inherit;
+    }
+}

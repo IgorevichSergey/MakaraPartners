@@ -1,0 +1,44 @@
+
+.firm-page .text-block{
+    width:70%;
+    height: 370px;
+    max-width:540px;
+    padding-right:20px;
+    overflow-y: scroll;
+    font-family: mavenprobold;
+    font-size: 15px;
+}
+.begin-part,
+.end-part{
+    color:grey;
+}
+
+.firm-page .text-block::-webkit-scrollbar {
+    width: 5px;
+    height: 120%;
+    background: rgba(0, 0, 0, 0);
+}
+.firm-page .text-block::-webkit-scrollbar-button {
+    background: grey;
+}
+.firm-page .text-block::-webkit-scrollbar-track {
+    background: grey;
+}
+
+.firm-page .text-block::-webkit-scrollbar-thumb {
+    background: #B22022;
+    border:7px solid #B22022;
+    background: linear-gradient(to bottom, #B22022, #EB2125);
+}
+@media screen and (max-width: 750px){
+    .firm-page .text-block {
+        height: 290px;
+        width: 100%;
+        max-width:100%
+    }
+}
+@media screen and (max-width: 460px){
+    .firm-page .text-block {
+        font-size: 12px;
+    }
+}

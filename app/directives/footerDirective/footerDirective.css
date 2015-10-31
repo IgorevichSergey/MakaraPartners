@@ -1,6 +1,15 @@
+footer-directive{
+    width: 100%;
+    position: absolute;
+    bottom:0;
+}
+footer-directive hr{
+    border-color:red;
+}
 .menu{
     padding:0;
     width:70%;
+    margin:0 auto;
     min-width:250px;
     max-width:900px;
 }
@@ -18,7 +27,7 @@
     position: absolute;
     width: auto;
     height: 50px;
-    right: 5px;
+    right: 180px;
     top:15px;
 }
 .menu ul li a{
@@ -31,27 +40,24 @@
     vertical-align:middle;
     text-align:center;
 }
-@media screen and (max-width: 960px){
-    .menu{
-        width:100%;
-    }
-    .menu .footer-logo{
-        text-align: center;
-        color: red;
-        position: static;
-        width: 100%;
-        display: block;
-        padding-top: 15px;
-    }
+.menu .footer-site-href{
+    width:320px;
 
+    padding-right: 15px;
 }
-@media screen and (max-width: 380px){
+.menu .footer-site-href a{
+    text-align: right;
+}
+@media screen and (max-width: 750px){
     .menu ul li{
         display: table-row;
         height: 25px;
     }
     .menu ul li a{
         height:20px;
+    }
+    .menu .footer-site-href a{
+        text-align: center;
     }
 }
 

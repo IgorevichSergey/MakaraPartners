@@ -2,9 +2,64 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.01, user-scalable=0">
     <title>kontakt page</title>
+    <link href="css/bower.css" rel="stylesheet" type="text/css">
+    <link href="css/app.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body ng-app="kontaktPage">
+<div class="background-class" ng-controller="kontaktPageCtrl as kontaktPageCtrl">
+    <gradient-directive></gradient-directive>
+    <div class="center-block kontakt-page">
+        <h3>
+            MAKARA Partners
+        </h3>
+        <div class="content">
+            <div class="left-side contact-info-block">
+                <div class="address">
+                    ul. Dworcowa 22 <br>
+                    43-200 Pszczyna <br>
+                    <span class="">pocaz mape dojazdu</span>
+                </div>
+                <br>
+                <div class="telephone">
+                    tel.:+48 32 448 22 11 <br>
+                    e-mail:makara@makara.pl
+                </div>
+                <br>
+                <div class="contact-face">
+                    <div class="left-side">
+                        mgr inz.arch.Maria Makara:
+                    </div>
+                    <div class="right-side">
+                        +48 <span ng-if="!kontaktPageCtrl.show_maria_number" ng-click="kontaktPageCtrl.show_maria_number_function()" class="show-number">pokaz numer</span> <span ng-if="kontaktPageCtrl.show_maria_number" ng-click="kontaktPageCtrl.show_maria_number_function()" class="hidden-number">32 448 22 11</span>
+                    </div>
+                    <div class="clear-block"></div>
+                    <div class="left-side">
+                        mgr inz. Aleksander Makara:
+                    </div>
+                    <div class="right-side">
+                        +48 <span ng-if="!kontaktPageCtrl.show_aleks_number" ng-click="kontaktPageCtrl.show_aleks_number_function()" class="show-number">pokaz numer</span> <span ng-if="kontaktPageCtrl.show_aleks_number" ng-click="kontaktPageCtrl.show_aleks_number_function()" class="hidden-number">32 448 22 11</span>
+                    </div>
+                    <div class="clear-block"></div>
+                </div>
+                <br>
+                <div class="working-time">
+                    biuro otwarte od pon. do pt. w godzinach 8:00 - 16:00
+                </div>
+            </div>
+            <div class="right-side image-div">
+                <img src="images/kontakt_picture.jpg" />
+            </div>
+            <div class="clear-block"></div>
+        </div>
 
+    </div>
+    <footer-directive></footer-directive>
+</div>
+
+<script src="js/bower-components.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

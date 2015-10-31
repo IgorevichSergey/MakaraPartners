@@ -2,23 +2,22 @@ angular.module('footer.directive', [])
     .directive('footerDirective', function(){
         return {
             restrict:'E',
-            template:
+            template:'<hr />'+
             '<div class="menu">' +
-                    '<div class="center">'+
                         '<ul>' +
-                            '<li><a href="#">Strona glovna</a></li>' +
-                            '<li><a href="#">O firmie</a></li>' +
-                            '<li><a href="#">Projecty indywidualne</a></li>' +
-                            '<li><a href="#">Realizacje</a></li>' +
-                            '<li><a href="#">Kontakt</a></li>' +
-
+                            '<li><a href="index.html">Strona glovna</a></li>' +
+                            '<li><a href="firmPage.html">O firmie</a></li>' +
+                            '<li><a href="projectPage.html">Projecty indywidualne</a></li>' +
+                            '<li><a href="videoPage.html">Realizacje</a></li>' +
+                            '<li><a href="kontaktPage.html">Kontakt</a></li>' +
+                            '<li class="footer-site-href"><a href="kontaktPage.html">Gotowe projecty domow:DOM.PI</a></li>'+
                         '</ul>' +
-            '<span class="footer-logo">Gotowe projecty domow:DOM.PI</span>'+
-                    '</div>'+
             '</div>',
             controller: function(){
                 var footer_height = $('.footer-block').height();
                 var display_height = $(window).height();
+                console.log('footer_height', footer_height);
+                console.log('display_height', display_height);
                 $('.footer-block').css('top', display_height-footer_height);
             }
         }
