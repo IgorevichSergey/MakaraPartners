@@ -8,10 +8,10 @@ angular.module('kontaktPage', [
         var content = $('.kontakt-page .content');
 
         mainFactory.setHeight(kontaktPage);
-        mainFactory.setVertical(kontaktPage, content);
+        mainFactory.setVertical(kontaktPage, content, 1.2);
 
         $(window).resize(function(){
-            mainFactory.setVertical(kontaktPage, content);
+            mainFactory.setVertical(kontaktPage, content, 1.2);
             mainFactory.setHeight(kontaktPage);
         });
         this.show_aleks_number_function = function(){

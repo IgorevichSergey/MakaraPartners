@@ -8,10 +8,10 @@ footer-directive hr{
 }
 .menu{
     padding:0;
-    width:70%;
+    width: 80%;
     margin:0 auto;
     min-width:250px;
-    max-width:900px;
+    max-width:965px;
 }
 .menu ul{
     display:table-row;

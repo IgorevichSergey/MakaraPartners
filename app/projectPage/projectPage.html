@@ -11,22 +11,25 @@
 <body ng-app="projectPage">
 <div class="background-class" ng-controller="projectPageCtrl as projectPageCtrl">
     <gradient-directive></gradient-directive>
-    <div class="container">
-        <div class="center-block gallery-page">
-            <div class="big-image">
-                <img src="{{projectPageCtrl.bigImage}}"/>
+    <div class="project-content">
+        <div class="container">
+            <div class="center-block gallery-page">
+                <div class="big-image">
+                    <img src="{{projectPageCtrl.bigImage}}"/>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="gallery">
-        <div ng-click="projectPageCtrl.imageSet(img)"
-             class="gallery-img"
-             ng-class="{'img-active':projectPageCtrl.bigImage == img.img_src}"
-             ng-repeat="img in projectPageCtrl.gallery">
-            <img height="100px" src="{{img.img_src}}"/>
-        </div>
+        <div class="gallery">
+            <div ng-click="projectPageCtrl.imageSet(img)"
+                 class="gallery-img"
+                 ng-class="{'img-active':projectPageCtrl.bigImage == img.img_src}"
+                 ng-repeat="img in projectPageCtrl.gallery">
+                <img height="100px" src="{{img.img_src}}"/>
+            </div>
 
+        </div>
     </div>
+
     <footer-directive></footer-directive>
 </div>
 <script src="js/bower-components.min.js"></script>

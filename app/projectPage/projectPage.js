@@ -1,4 +1,5 @@
 angular.module('projectPage', [
+    'main',
     'footer.directive',
     'gradient.directive'
 ])
@@ -34,13 +35,22 @@ angular.module('projectPage', [
             {img_src: 'images/realizacje(gallery)/28.jpg',id:28}
         ]
     })
-    .controller('projectPageCtrl', function(galleryConfig){
+    .controller('projectPageCtrl', function(galleryConfig, mainFactory){
         var self = this;
+        var _window = $(window);
+        var _content = $('.project-content');
+        mainFactory.setHeight(_content);
+        mainFactory.setVertical(_window, _content, 3);
+        $('.big-image img').css('height', _content.height()*0.7+'px');
+        $(window).resize(function(){
+            mainFactory.setHeight(_content);
+            mainFactory.setVertical(_window, _content, 3);
+            $('.big-image img').css('height', _content.height()*0.7+'px');
+        });
 
         self.gallery = galleryConfig.data;
         self.bigImage = self.gallery[0].img_src;
         self.imageSet = function(obj){
-            //console.log('img_src', img_src);
             self.bigImage = obj.img_src;
         };
     });

@@ -35,5 +35,5 @@
     text-align: center;
 }
 .big-image img{
-    height: 355px;
+    max-width:100%;
 }
