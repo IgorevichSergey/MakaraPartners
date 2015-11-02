@@ -37,20 +37,48 @@ angular.module('projectPage', [
     })
     .controller('projectPageCtrl', function(galleryConfig, mainFactory){
         var self = this;
-        var _window = $(window);
-        var _content = $('.project-content');
-        mainFactory.setHeight(_content);
-        mainFactory.setVertical(_window, _content, 3);
-        $('.big-image img').css('height', _content.height()*0.7+'px');
-        $(window).resize(function(){
-            mainFactory.setHeight(_content);
-            mainFactory.setVertical(_window, _content, 3);
-            $('.big-image img').css('height', _content.height()*0.7+'px');
-        });
+        var _window = $(window).height();
+        var _gradient_directive = $('gradient-directive .gradient').height() + $('gradient-directive .container').height();
+        var _footer_directive = $('footer-directive').height();
+        var _slider = 0;
 
+        $('.gallery-right-page').css('display', 'none');
+        $('.project-content  .gallery').css('bottom', _footer_directive+'px');
+        $('.big-image img').css('height', _window -(180 + _gradient_directive + _footer_directive)+'px');
+        $(window).resize(function(){
+            var _window = $(window).height();
+            var _gradient_directive = $('gradient-directive .gradient').height() + $('gradient-directive .container').height();
+            var _footer_directive = $('footer-directive').height();
+            $('.project-content  .gallery').css('bottom', _footer_directive+'px');
+            $('.big-image img').css('height', _window -(180 + _gradient_directive + _footer_directive)+'px');
+            //sorry ),=
+        });
+        self.style = {
+            transform: 'translateX('+_slider+'px)'
+        };
         self.gallery = galleryConfig.data;
         self.bigImage = self.gallery[0].img_src;
         self.imageSet = function(obj){
             self.bigImage = obj.img_src;
+        };
+        self.move = function(moveTo){
+            if(moveTo == 'right'){
+                _slider+=100;
+                self.style.transform = 'translateX('+_slider+'px)';
+            } else {
+                _slider-=100;
+                self.style.transform = 'translateX('+_slider+'px)';
+            }
+            if(_slider == 0){
+                $('.gallery-right-page').css('display', 'none');
+            } else {
+                $('.gallery-right-page').css('display', 'block');
+            }
+            if(_slider <= -3000){ // set this value to (-3100...) if u will add photo.
+                $('.gallery-left-page').css('display', 'none');
+            } else {
+                $('.gallery-left-page').css('display', 'block');
+            }
+            self.style.transition= 'all 0.5s';
         };
     });

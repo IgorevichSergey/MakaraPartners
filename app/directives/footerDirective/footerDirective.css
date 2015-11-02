@@ -5,11 +5,12 @@ footer-directive{
 }
 footer-directive hr{
     border-color:red;
+    margin-bottom:0;
 }
 .menu{
     padding:0;
     width: 80%;
-    margin:0 auto;
+    margin:10px auto;
     min-width:250px;
     max-width:965px;
 }
@@ -47,6 +48,9 @@ footer-directive hr{
 }
 .menu .footer-site-href a{
     text-align: right;
+}
+.active-tab a{
+    color:red!important;
 }
 @media screen and (max-width: 750px){
     .menu ul li{

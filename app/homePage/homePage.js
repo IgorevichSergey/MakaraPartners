@@ -3,5 +3,5 @@ angular.module('homePage', [
     'gradient.directive'
 ])
     .controller('homePageCtrl', function(){
-        console.log('yes');
+
     });

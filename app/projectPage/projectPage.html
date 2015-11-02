@@ -20,8 +20,11 @@
             </div>
         </div>
         <div class="gallery">
-            <div ng-click="projectPageCtrl.imageSet(img)"
+            <div ng-click="projectPageCtrl.move('left')" class="gallery-left-page"><</div>
+            <div ng-click="projectPageCtrl.move('right')" class="gallery-right-page">></div>
+            <div ng-click="projectPageCtrl.imageSet(img); projectPageCtrl.test($event)"
                  class="gallery-img"
+                 ng-style="projectPageCtrl.style"
                  ng-class="{'img-active':projectPageCtrl.bigImage == img.img_src}"
                  ng-repeat="img in projectPageCtrl.gallery">
                 <img height="100px" src="{{img.img_src}}"/>
@@ -30,7 +33,7 @@
         </div>
     </div>
 
-    <footer-directive></footer-directive>
+    <footer-directive footer="'projectPage'"></footer-directive>
 </div>
 <script src="js/bower-components.min.js"></script>
 <script src="js/app.js"></script>

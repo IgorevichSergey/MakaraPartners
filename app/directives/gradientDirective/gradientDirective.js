@@ -6,7 +6,7 @@ angular.module('gradient.directive', [])
             '<div class="container">' +
             '<div class="center-block image-logo">' +
             '<img src="images/mak_logo.svg">' +
-                '<div class="logo-description">description</div>'+
+                '<div class="logo-description">Architekt i Konstruktor</div>'+
             '</div></div>'
         }
     });
