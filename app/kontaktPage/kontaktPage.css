@@ -1,14 +1,16 @@
 .kontakt-page{
-   margin-right: 10%;
-   height:475px;
+    /*margin-right: 10%;*/
+}
+.kontakt-page-description{
+    margin-right: 10%;
 }
 .kontakt-page img{
     width:100%;
 }
 .kontakt-page .image-div{
-    background-color: grey;
-    min-width:250px;
-    max-width:350px;
+    width: 368px;
+    margin-left:15px;
+    background-color: #333333;
     padding:5px;
     border:1px solid white;
 }
@@ -24,7 +26,6 @@
 
 .kontakt-page::-webkit-scrollbar {
     width: 5px;
-    height: 120%;
     background: rgba(0, 0, 0, 0);
 }
 .kontakt-page::-webkit-scrollbar-button {
@@ -40,18 +41,33 @@
     background: linear-gradient(to bottom, #B22022, #EB2125);
 }
 
-/*@media screen and (max-width: 970px){*/
-    /*.kontakt-page{*/
-        /*margin-right: 10%;*/
-    /*}*/
-/*}*/
-@media screen and (max-width: 750px){
-    .kontakt-page{
-        height:370px;
-        margin-right: 20px;
-        overflow-y:scroll;
+@media screen and (max-width: 1040px){
+    .kontakt-page .contact-face .right-side {
+        width: 100%;
+        float: none;
+    }
+    .kontakt-page .new-line{
+        display:inline-block;
     }
     .kontakt-page .image-div{
-        max-width: inherit;
+        margin-top:32px;
     }
+}
+@media screen and (max-width: 750px){
+    .kontakt-page{
+        margin-right: 20px;
+        overflow-y:scroll;
+        overflow-x: hidden;
+    }
+    .kontakt-page .image-div{
+        width: 99%;
+        margin:0 auto;
+    }
+    .kontakt-page .left-side.contact-info-block{
+        margin-bottom:10px;
+    }
+    .kontakt-page .kontakt-page-description{
+        margin-right: 20px;
+    }
+
 }

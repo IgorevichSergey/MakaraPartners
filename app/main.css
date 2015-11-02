@@ -15,6 +15,7 @@
     src: url(../fonts/mavenproregular.ttf);
 }
 h3{
+    color:white;
     font-family:mavenproregular;
     margin-bottom:20px;
 }
@@ -39,15 +40,16 @@ h3{
     background-size:cover;
 }
 .left-side{
-    width:50%;
     float:left;
 }
 .right-side{
-    width:50%;
     float:right;
 }
 .clear-block{
     clear:both;
+}
+.new-line{
+    display:none;
 }
 @media screen and (max-width: 750px){
     h3{

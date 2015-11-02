@@ -11,49 +11,59 @@
 <body ng-app="kontaktPage">
 <div class="background-class" ng-controller="kontaktPageCtrl as kontaktPageCtrl">
     <gradient-directive></gradient-directive>
-    <div class="center-block kontakt-page">
-        <h3>
-            MAKARA Partners
-        </h3>
-        <div class="content">
-            <div class="left-side contact-info-block">
-                <div class="address">
-                    ul. Dworcowa 22 <br>
-                    43-200 Pszczyna <br>
-                    <span class="">pocaz mape dojazdu</span>
-                </div>
-                <br>
-                <div class="telephone">
-                    tel.:+48 32 448 22 11 <br>
-                    e-mail:makara@makara.pl
-                </div>
-                <br>
-                <div class="contact-face">
-                    <div class="left-side">
-                        mgr inz.arch.Maria Makara:
+
+    <div class="center-block">
+
+        <div class="kontakt-page">
+            <div class="content">
+                <h3>
+                    MAKARA Partners
+                </h3>
+                <div class="left-side contact-info-block">
+                    <div class="address">
+                        ul. Dworcowa 22 <br>
+                        43-200 Pszczyna <br>
+                        <span class="">pocaz mape dojazdu</span>
                     </div>
-                    <div class="right-side">
-                        +48 <span ng-if="!kontaktPageCtrl.show_maria_number" ng-click="kontaktPageCtrl.show_maria_number_function()" class="show-number">pokaz numer</span> <span ng-if="kontaktPageCtrl.show_maria_number" ng-click="kontaktPageCtrl.show_maria_number_function()" class="hidden-number">32 448 22 11</span>
+                    <br>
+                    <div class="telephone">
+                        tel.:+48 32 448 22 11 <br>
+                        e-mail:makara@makara.pl
                     </div>
-                    <div class="clear-block"></div>
-                    <div class="left-side">
-                        mgr inz. Aleksander Makara:
+                    <br>
+                    <div class="contact-face">
+                        <div class="left-side">
+                            mgr inz.arch.Maria Makara:
+                        </div>
+                        <br class="new-line">
+                        <div class="right-side">
+                            +48 <span ng-if="!kontaktPageCtrl.show_maria_number" ng-click="kontaktPageCtrl.show_maria_number_function()" class="show-number">pokaz numer</span> <span ng-if="kontaktPageCtrl.show_maria_number" ng-click="kontaktPageCtrl.show_maria_number_function()" class="hidden-number">32 448 22 11</span>
+                        </div>
+                        <div class="clear-block"></div>
+                        <div class="left-side">
+                            mgr inz. Aleksander Makara:
+                        </div>
+                        <br class="new-line">
+                        <div class="right-side">
+                            +48 <span ng-if="!kontaktPageCtrl.show_aleks_number" ng-click="kontaktPageCtrl.show_aleks_number_function()" class="show-number">pokaz numer</span> <span ng-if="kontaktPageCtrl.show_aleks_number" ng-click="kontaktPageCtrl.show_aleks_number_function()" class="hidden-number">32 448 22 11</span>
+                        </div>
+                        <div class="clear-block"></div>
                     </div>
-                    <div class="right-side">
-                        +48 <span ng-if="!kontaktPageCtrl.show_aleks_number" ng-click="kontaktPageCtrl.show_aleks_number_function()" class="show-number">pokaz numer</span> <span ng-if="kontaktPageCtrl.show_aleks_number" ng-click="kontaktPageCtrl.show_aleks_number_function()" class="hidden-number">32 448 22 11</span>
+                    <br>
+                    <br>
+                    <div class="working-time">
+                        biuro otwarte od pon. do pt.
+                        <br class="new-line">
+                        w godzinach 8:00 - 16:00
                     </div>
-                    <div class="clear-block"></div>
                 </div>
-                <br>
-                <div class="working-time">
-                    biuro otwarte od pon. do pt. w godzinach 8:00 - 16:00
+                <div class="left-side image-div">
+                    <img src="images/kontakt_picture.jpg" />
                 </div>
+                <div class="clear-block"></div>
             </div>
-            <div class="right-side image-div">
-                <img src="images/kontakt_picture.jpg" />
-            </div>
-            <div class="clear-block"></div>
         </div>
+
 
     </div>
     <footer-directive></footer-directive>

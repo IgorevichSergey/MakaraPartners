@@ -7,6 +7,7 @@ var uncss = require('gulp-uncss');
 
 config = {
     SCRIPTS: [
+        "./app/*.js",
         "./app/directives/**/*.js",
         "./app/firmPage/**/*.js",
         "./app/homePage/**/*.js",
