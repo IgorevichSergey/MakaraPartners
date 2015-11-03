@@ -13,7 +13,7 @@ angular.module('footer.directive', [])
             template:'<hr />'+
             '<div class="menu">' +
                         '<ul>' +
-                            '<li ng-class="{\'active-tab\': footer === \'mainPage\'}"><a href="index.html">{{footer}}</a></li>' +
+                            '<li ng-class="{\'active-tab\': footer === \'mainPage\'}"><a href="index.html">Glovna</a></li>' +
                             '<li ng-class="{\'active-tab\': footer === \'firmPage\'}"><a href="firmPage.html">O firmie</a></li>' +
                             '<li ng-class="{\'active-tab\': footer === \'projectPage\'}"><a href="projectPage.html">Projecty</a></li>' +
                             '<li ng-class="{\'active-tab\': footer === \'videoPage\'}"><a href="videoPage.html">Realizacje</a></li>' +
