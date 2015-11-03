@@ -1,7 +1,7 @@
-angular.module('homePage', [
+angular.module('videoPage', [
     'footer.directive',
     'gradient.directive'
 ])
-    .controller('homePageCtrl', function(){
+    .controller('videoPageCtrl', function(){
 
     });

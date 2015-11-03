@@ -14,6 +14,10 @@
     font-family: mavenproregular;
     src: url(../fonts/mavenproregular.ttf);
 }
+@font-face {
+    font-family: peignot;
+    src: url(../fonts/Peignot.ttf);
+}
 h3{
     color:white;
     font-family:mavenproregular;
@@ -21,15 +25,9 @@ h3{
 }
 .center-block{
     color:white;
-    padding:10px;
+
+    padding:70px 10px 10px 10px;
     margin-left:20%;
-}
-.logo-description{
-    color:white;
-    font-size:18px;
-    padding-top:5px;
-    padding-left:25px;
-    font-family: mavenpromedium;
 }
 .background-class{
     position: absolute;

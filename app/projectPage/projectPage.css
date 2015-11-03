@@ -34,10 +34,12 @@
 }
 .project-content .gallery-page{
     text-align: center;
+    margin: 0 auto;
 }
 .project-content .big-image img{
     border:1px solid grey;
     padding:5px;
+    max-width:100%;
 }
 .gallery-left-page, .gallery-right-page{
     cursor:pointer;

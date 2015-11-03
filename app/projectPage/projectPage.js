@@ -40,24 +40,23 @@ angular.module('projectPage', [
         var _window = $(window).height();
         var _gradient_directive = $('gradient-directive .gradient').height() + $('gradient-directive .container').height();
         var _footer_directive = $('footer-directive').height();
-        var _slider = 0;
+        var _slider = -1500;
 
-        $('.gallery-right-page').css('display', 'none');
         $('.project-content  .gallery').css('bottom', _footer_directive+'px');
-        $('.big-image img').css('height', _window -(180 + _gradient_directive + _footer_directive)+'px');
+        $('.big-image img').css('height', _window -(240 + _gradient_directive + _footer_directive)+'px');
         $(window).resize(function(){
             var _window = $(window).height();
             var _gradient_directive = $('gradient-directive .gradient').height() + $('gradient-directive .container').height();
             var _footer_directive = $('footer-directive').height();
             $('.project-content  .gallery').css('bottom', _footer_directive+'px');
-            $('.big-image img').css('height', _window -(180 + _gradient_directive + _footer_directive)+'px');
+            $('.big-image img').css('height', _window -(240 + _gradient_directive + _footer_directive)+'px');
             //sorry ),=
         });
         self.style = {
             transform: 'translateX('+_slider+'px)'
         };
         self.gallery = galleryConfig.data;
-        self.bigImage = self.gallery[0].img_src;
+        self.bigImage = self.gallery[14].img_src;
         self.imageSet = function(obj){
             self.bigImage = obj.img_src;
         };
@@ -69,7 +68,7 @@ angular.module('projectPage', [
                 _slider-=100;
                 self.style.transform = 'translateX('+_slider+'px)';
             }
-            if(_slider == 0){
+            if(_slider === 0){
                 $('.gallery-right-page').css('display', 'none');
             } else {
                 $('.gallery-right-page').css('display', 'block');

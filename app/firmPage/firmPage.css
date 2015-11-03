@@ -1,11 +1,11 @@
 
 .firm-page .text-block{
+    font-family: mavenproregular;
     width:70%;
     height: 370px;
     max-width:540px;
     padding-right:20px;
     overflow-y: scroll;
-    font-family: mavenprobold;
     font-size: 15px;
 }
 .begin-part,
@@ -14,7 +14,7 @@
 }
 
 .firm-page .text-block::-webkit-scrollbar {
-    width: 5px;
+    width: 2px;
     height: 120%;
     background: rgba(0, 0, 0, 0);
 }
@@ -27,7 +27,7 @@
 
 .firm-page .text-block::-webkit-scrollbar-thumb {
     background: #B22022;
-    border:7px solid #B22022;
+    border:4px solid #B22022;
     background: linear-gradient(to bottom, #B22022, #EB2125);
 }
 @media screen and (max-width: 750px){
