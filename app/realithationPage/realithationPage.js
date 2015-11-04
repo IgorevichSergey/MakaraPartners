@@ -21,18 +21,35 @@ angular.module('realithationPage', [
     .controller('realithationPageCtrl', function(galleryConfig){
         var self = this;
         var _window = $(window).height();
-        var _gradient_directive = $('gradient-directive .gradient').height() + $('gradient-directive .container').height();
-        var _footer_directive = $('footer-directive').height();
-        var _slider = 0;
+            var _gradient_directive = $('gradient-directive .gradient').height() + $('gradient-directive .container').height();
+            var _footer_directive = $('footer-directive').height();
+        var _slider = 100;
+        if(_window > 700){
+            $('.realization-content .center-block.gallery-page').css('paddingTop', 70+'px');
+            $('.big-image img').css('height', _window -(240 + _gradient_directive + _footer_directive)+'px');
+        } else if (_window < 700 && _window > 600){
+            $('.realization-content .center-block.gallery-page').css('paddingTop', 50+'px');
+            $('.big-image img').css('height', 200+'px');
+        } else {
+            $('.realization-content .center-block.gallery-page').css('paddingTop', 10+'px');
+            $('.big-image img').css('height', 180+'px');
+        }
 
-        $('.project-content  .gallery').css('bottom', _footer_directive+'px');
-        $('.big-image img').css('height', _window -(240 + _gradient_directive + _footer_directive)+'px');
         $(window).resize(function(){
             var _window = $(window).height();
             var _gradient_directive = $('gradient-directive .gradient').height() + $('gradient-directive .container').height();
             var _footer_directive = $('footer-directive').height();
-            $('.project-content  .gallery').css('bottom', _footer_directive+'px');
-            $('.big-image img').css('height', _window -(240 + _gradient_directive + _footer_directive)+'px');
+            $('.realization-content .gallery').css('bottom', _footer_directive+'px');
+            if(_window > 700){
+                $('.realization-content .center-block.gallery-page').css('paddingTop', 70+'px');
+                $('.big-image img').css('height', _window -(240 + _gradient_directive + _footer_directive)+'px');
+            } else if (_window < 700 && _window > 600){
+                $('.realization-content .center-block.gallery-page').css('paddingTop', 50+'px');
+                $('.big-image img').css('height', 200+'px');
+            } else {
+                $('.realization-content .center-block.gallery-page').css('paddingTop', 10+'px');
+                $('.big-image img').css('height', 180+'px');
+            }
             //sorry ),=
         });
         self.style = {

@@ -43,13 +43,32 @@ angular.module('projectPage', [
         var _slider = -1500;
 
         $('.project-content  .gallery').css('bottom', _footer_directive+'px');
-        $('.big-image img').css('height', _window -(240 + _gradient_directive + _footer_directive)+'px');
+        if(_window > 700){
+            $('.project-content .center-block.gallery-page').css('paddingTop', 70+'px');
+            $('.big-image img').css('height', _window -(240 + _gradient_directive + _footer_directive)+'px');
+        } else if (_window < 700 && _window > 600){
+            $('.project-content .center-block.gallery-page').css('paddingTop', 50+'px');
+            $('.big-image img').css('height', 200+'px');
+        } else {
+            $('.project-content .center-block.gallery-page').css('paddingTop', 10+'px');
+            $('.big-image img').css('height', 180+'px');
+        }
+
         $(window).resize(function(){
             var _window = $(window).height();
             var _gradient_directive = $('gradient-directive .gradient').height() + $('gradient-directive .container').height();
             var _footer_directive = $('footer-directive').height();
             $('.project-content  .gallery').css('bottom', _footer_directive+'px');
-            $('.big-image img').css('height', _window -(240 + _gradient_directive + _footer_directive)+'px');
+            if(_window > 700){
+                $('.project-content .center-block.gallery-page').css('paddingTop', 70+'px');
+                $('.big-image img').css('height', _window -(240 + _gradient_directive + _footer_directive)+'px');
+            } else if (_window < 700 && _window > 600){
+                $('.project-content .center-block.gallery-page').css('paddingTop', 50+'px');
+                $('.big-image img').css('height', 200+'px');
+            } else {
+                $('.project-content .center-block.gallery-page').css('paddingTop', 10+'px');
+                $('.big-image img').css('height', 180+'px');
+            }
             //sorry ),=
         });
         self.style = {

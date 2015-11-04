@@ -28,7 +28,7 @@
     margin-left: 38%;
     content: '';
     position: absolute;
-    top: -100px;
+    top: -80px;
     border: 10px solid transparent;
     border-bottom: 10px solid white;
 }
@@ -39,6 +39,7 @@
 .project-content .big-image img{
     border:1px solid grey;
     padding:5px;
+    height: 100%;
     max-width:100%;
 }
 .gallery-left-page, .gallery-right-page{
@@ -50,7 +51,7 @@
     font-size:19px;
     font-weight:bolder;
     padding-left: 4px;
-    padding-top: 47px;
+    padding-top: 36px;
     height: 100%;
     width: 20px;
 }

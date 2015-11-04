@@ -11,7 +11,7 @@
 <body ng-app="realithationPage">
 <div class="background-class" ng-controller="realithationPageCtrl as realithationPageCtrl">
     <gradient-directive></gradient-directive>
-    <div class="project-content">
+    <div class="project-content realization-content">
         <div class="container">
             <div class="center-block gallery-page">
                 <div class="big-image">
@@ -27,7 +27,7 @@
                  ng-style="realithationPageCtrl.style"
                  ng-class="{'img-active':realithationPageCtrl.bigImage == img.img_src}"
                  ng-repeat="img in realithationPageCtrl.gallery">
-                <img height="100px" src="{{img.img_src}}"/>
+                <img height="80px" src="{{img.img_src}}"/>
             </div>
 
         </div>

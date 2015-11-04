@@ -29,7 +29,8 @@ h3{
     padding:70px 10px 10px 10px;
     margin-left:20%;
 }
-.background-class{
+.background-class,
+.background-class-main{
     position: absolute;
     font-family: mavenproregular;
     width: 100%;
@@ -37,6 +38,9 @@ h3{
     background-image: url(../images/background.jpg);
     background-repeat:no-repeat;
     background-size:cover;
+}
+.background-class-main{
+    background-image: url(../images/background03.jpg);
 }
 .left-side{
     float:left;
