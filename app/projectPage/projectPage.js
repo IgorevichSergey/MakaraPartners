@@ -81,10 +81,10 @@ angular.module('projectPage', [
         };
         self.move = function(moveTo){
             if(moveTo == 'right'){
-                _slider+=100;
+                _slider-=100;
                 self.style.transform = 'translateX('+_slider+'px)';
             } else {
-                _slider-=100;
+                _slider+=100;
                 self.style.transform = 'translateX('+_slider+'px)';
             }
             if(_slider === 0){
