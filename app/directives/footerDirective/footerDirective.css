@@ -54,9 +54,12 @@ footer-directive hr{
     color:red!important;
 }
 @media screen and (max-width: 750px){
-    .menu ul li{
+    .menu ul li {
         display: table-row;
         height: 25px;
+    }
+    .menu li.hide-footer-menu-mobile{
+        display:none;
     }
     .menu ul li a{
         height:20px;

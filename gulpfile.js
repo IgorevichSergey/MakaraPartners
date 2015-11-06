@@ -14,7 +14,8 @@ config = {
         "./app/kontaktPage/**/*.js",
         "./app/projectPage/**/*.js",
         "./app/realithationPage/**/*.js",
-        "./app/videoPage/**/*.js"
+        "./app/videoPage/**/*.js",
+        "./app/mapPage/**/*.js"
 
     ],
     BOWER_SCRIPTS: [
@@ -60,6 +61,8 @@ gulp.task('copy_html', function(){
     gulp.src('./app/projectPage/projectPage.html')
         .pipe(gulp.dest('./production'));
     gulp.src('./app/videoPage/videoPage.html')
+        .pipe(gulp.dest('./production'));
+    gulp.src('./app/mapPage/mapPage.html')
         .pipe(gulp.dest('./production'));
     gulp.src('./app/realithationPage/realithationPage.html')
         .pipe(gulp.dest('./production'))

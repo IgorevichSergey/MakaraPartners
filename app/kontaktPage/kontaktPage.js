@@ -19,5 +19,5 @@ angular.module('kontaktPage', [
         };
         this.show_maria_number_function = function(){
             this.show_maria_number = !this.show_maria_number;
-        }
+        };
     });

@@ -17,6 +17,10 @@
 .kontakt-page .contact-info-block{
     padding:5px;
 }
+.kontakt-page .contact-info-block .show-map{
+    color:grey;
+    text-decoration: none;
+}
 .kontakt-page .show-number{
     color:grey;
     border:1px solid grey;
